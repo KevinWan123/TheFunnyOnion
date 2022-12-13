@@ -15,18 +15,18 @@
 
 .Title{
 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Helvetica', Arial, Helvetica, sans-serif, serif;
     font-size:36px;
 }
 .Date{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Helvetica', Arial, Helvetica, sans-serif, serif;
     color:gray;
     padding-bottom: 10px;
 }
 .News{
-    padding-top: 10px;
-    text-indent: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    padding-top: 16px;
+
+    font-family: 'Helvetica', Arial, Helvetica, sans-serif, serif;
 
     padding-bottom: 24px;
 }
