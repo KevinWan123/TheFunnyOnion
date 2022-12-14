@@ -2,4 +2,4 @@
 Satirical News Website with Ai generated stories and images
 https://kevinwan123.github.io/TheFunnyOnion/
 
-![image](https://user-images.githubusercontent.com/114878518/207232529-bec6acb5-fb6f-4ebc-8763-7dcf1b679b4f.png)
+![image](https://user-images.githubusercontent.com/114878518/207533464-9b311bc5-30ea-4f30-873d-d87a913f1e16.png)
