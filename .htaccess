@@ -1,1 +1,15 @@
-DirectoryIndex Sports.html
+# HTID:20926140: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:20926140:
+
+
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+
+<Files About.html>
+Order Allow, Deny
+Deny from all
+</Files>
