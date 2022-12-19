@@ -9,7 +9,3 @@ Deny from all
 </Files>
 
 
-<Files About.html>
-Order Allow, Deny
-Deny from all
-</Files>

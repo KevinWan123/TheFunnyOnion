@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>// Create a new div element
+            const todoListContainer = document.createElement("div");
+            
+            // Create an unordered list element
+            const todoList = document.createElement("ul");
+            
+            // Add the to-do list to the container
+            todoListContainer.appendChild(todoList);
+            
+            // Add a form for adding new to-do items
+            const form = document.createElement("form");
+            form.innerHTML = `
+              <input type="text" id="todo-input" placeholder="Add a new to-do item">
+              <button type="submit">Add</button>
+            `;
+            todoListContainer.appendChild(form);
+            
+            // Handle form submission
+            form.addEventListener("submit", e => {
+              e.preventDefault(); // Prevent the form from refreshing the page
+              const input = document.getElementById("todo-input");
+              const todo = input.value;
+              if (todo) {
+                // Add the to-do item to the list
+                const todoItem = document.createElement("li");
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                todoItem.appendChild(checkbox);
+                todoItem.innerText = todo;
+                todoList.appendChild(todoItem);
+                input.value = ""; // Clear the input
+              }
+            });
+            
+            // Add a delete button to each to-do item
+            todoList.addEventListener("click", e => {
+              if (e.target.tagName === "LI") {
+                const todoItem = e.target;
+                const deleteButton = document.createElement("button");
+                deleteButton.innerText = "Delete";
+                todoItem.appendChild(deleteButton);
+              }
+            });
+            
+            // Handle delete button clicks
+            todoList.addEventListener("click", e => {
+              if (e.target.tagName === "BUTTON") {
+                e.target.parentNode.remove();
+              }
+            });
+            
+            // Add the to-do list container to the document body
+            document.body.appendChild(todoListContainer);   </script>
+    </body>
+</html>
