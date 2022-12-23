@@ -468,3 +468,36 @@ fieldset {
   margin: 0;
   padding: 2px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    font-size: 1rem;
+    
+  }
+  #more-headlines {
+    float: left;
+    width: 220px;
+    min-height: 300px;
+    padding: 0 0 0 20px;
+    
+  }
+  #main {
+    display: flex;
+    float: left;
+    width: 330px;
+    min-height: 630px;
+    margin: 0 20px 0 0;
+  }
+  #sidebars{
+    display: grid;
+    float: left;
+    width: 330px;
+    min-height: 630px;
+    margin: 0 20px 0 40vw;
+    
+  }
+
+}
