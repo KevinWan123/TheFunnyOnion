@@ -3,18 +3,18 @@
 
 .Title{
 
-    font-family: sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     font-size:36px;
 }
 .Date{
-    font-family:sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     color:gray;
     padding-bottom: 10px;
 }
 .News{
     padding-top: 16px;
 
-    font-family:sans-serif;
+    font-family:'Helvetica', 'Arial', sans-serif;
 
     padding-bottom: 24px;
 }
