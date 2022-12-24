@@ -39,6 +39,7 @@ body {
   height: 44px;
   margin: 0 auto;
   background: #733b9c;
+  overflow:hidden;
 }
 
 #nav-bottom {
@@ -60,7 +61,8 @@ body {
   width: 980px;
   min-height: 630px;
   margin: 0 auto;
-  overflow: hidden;
+  
+
 }
 
 #main {
@@ -469,18 +471,47 @@ fieldset {
   padding: 2px;
 }
 
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: left;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
 
+a.active,a:hover{
+  background: #54e5bc;
+  transition: .5s;
+  opacity: 90%;
+  
+}
 
-@media only screen and (max-width: 600px) {
-  body {
+#aboutus{
+  display: none;
+  visibility: hidden;
+}
+@media screen and (max-width: 600px) {
+
+  #aboutus{
+    display: block;
+
+    visibility: visible;
+  }
+  body:not(#top){
     font-size: 1rem;
+
     
   }
   #more-headlines {
     float: left;
     width: 220px;
     min-height: 300px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 0px;
     
   }
   #main {
@@ -495,8 +526,63 @@ fieldset {
     float: left;
     width: 330px;
     min-height: 630px;
-    margin: 0 20px 0 20vw;
+    margin: 0 20px 0 10vw;
+    display: none;
+  
     
+  } 
+  
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background: #354246;
+    top: 220px;
+    left: -120%;
+    text-align: left;
+    transition: all .5s;
+    grid-auto-rows: max-content;
+
+ 
+  }
+  nav ul li{
+    float: left;
+    display: block;
+    margin: 25px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    overflow:hidden;
+    overflow-y: scroll;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #nav{
+    height: 70px;
+  }
+  #top{
+    width: 100%;
+    overflow: auto;
+  }
+  .sidebar{
+    display: none;
+
+
+  }
+  #extras{
+    display: none;
   }
 
 }
+
+
